@@ -7,7 +7,7 @@ const dotenv = require("dotenv").config();
 
 const { PORT, CLIENT_URLS, EMAIL_PASS, EMAIL_USER, EMAIL_REPORT } = process.env;
 
-const whitelist = CLIENT_URLS.split(",");
+const whitelist = CLIENT_URLS?.split(",");
 
 app.use(express.json());
 app.use(bodyparser.json());
